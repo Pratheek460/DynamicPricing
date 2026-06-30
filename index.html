@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Dynamic Pricing Platform</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>
+        AI Dynamic Pricing Platform
+    </h1>
+
+    <div class="card">
+
+        <h2>
+            Demand Forecast
+        </h2>
+
+        <input
+            id="storeNbr"
+            placeholder="Store Number"
+        >
+
+        <input
+            id="itemNbr"
+            placeholder="Item Number"
+        >
+
+        <button onclick="predictDemand()">
+            Predict Demand
+        </button>
+
+        <pre id="demandResult"></pre>
+
+        </div>
+
+    <div class="card">
+
+        <h2>
+            Price Optimization
+        </h2>
+
+        <input
+            id="price"
+            placeholder="Current Price"
+        >
+
+        <input
+            id="cost"
+            placeholder="Cost"
+        >
+
+        <input
+            id="demand"
+            placeholder="Demand"
+        >
+
+        <button onclick="recommendPrice()">
+            Recommend Price
+        </button>
+
+        <pre id="priceResult"></pre>
+
+    </div>
+
+    <div class="card">
+
+        <h2>
+            Inventory Planning
+        </h2>
+
+        <input
+            id="stock"
+            placeholder="Current Stock"
+        >
+
+        <input
+            id="inventoryDemand"
+            placeholder="Predicted Demand"
+        >
+
+        <button onclick="inventoryPlan()">
+            Calculate
+        </button>
+
+        <pre id="inventoryResult"></pre>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
